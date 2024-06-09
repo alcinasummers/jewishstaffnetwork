@@ -1,0 +1,71 @@
+.hero-container {
+  height: 45vh;
+  width: 100%;
+  background-position: center;
+  background-image: url("//live.staticflickr.com/65535/49491775578_13142f7a29_k.jpg"); /* Corrected closing quote */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
+  padding: 0 20px; /* Add padding to avoid text touching edges */
+}
+
+.hero-container > h1 {
+  color: #000000;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 20vw; /* Significantly increased font size */
+  margin: 0; /* Remove default margin */
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container > h1 {
+    font-size: 18vw; /* Adjust font size for large screens */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    height: 30vh; /* Adjust height for medium screens */
+  }
+  .hero-container > h1 {
+    font-size: 22vw; /* Adjust font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container {
+    height: 35vh; /* Adjust height for medium screens */
+  }
+  .hero-container > h1 {
+    font-size: 22vw; /* Adjust font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: 20vh; /* Adjust height for small screens */
+  }
+  .hero-container > h1 {
+    font-size: 22vw; /* Adjust font size for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    height: 18vh; /* Adjust height for extra small screens */
+  }
+  .hero-container > h1 {
+    font-size: 25vw; /* Adjust font size for extra small screens */
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero-container {
+    height: 12vh; /* Adjust height for extra small screens */
+  }
+  .hero-container > h1 {
+    font-size: 20vw; /* Adjust font size for extra small screens */
+  }
+}

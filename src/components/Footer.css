@@ -1,0 +1,31 @@
+.footer-container {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 100px; /* Larger margin-top */
+}
+
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.website-rights {
+  font-size: 0.8rem;
+}

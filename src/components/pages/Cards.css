@@ -1,0 +1,150 @@
+.cards {
+  padding: 4rem;
+  background: #fff;
+}
+
+.cards h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.cards h1 {
+  text-align: center;
+  font-size: 4rem; /* Adjusted for better scaling */
+}
+
+.cards p {
+  color: black;
+  margin: 30px auto;
+  max-width: 80%; /* Default max-width */
+  text-align: left;
+}
+
+.network-info {
+  text-align: left;
+}
+
+.network-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.network-info ul li {
+  margin-bottom: 10px;
+  max-width: 80%; /* Set the same max-width as the rest */
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+  width: 100%;
+}
+
+.home-item {
+  position: relative;
+  margin-left: 1.2em; /* Reduce space for the dot */
+  max-width: 80%; /* Set max-width to 80% */
+  margin: 0 auto; /* Center the ethics items */
+  text-align: left; /* Left align the text */
+}
+
+.home-item::before {
+  content: "•"; /* Add dot */
+  position: absolute;
+  left: -1em; /* Move dot closer to text */
+  color: #000000; /* Adjust dot color */
+}
+
+@media only screen and (min-width: 1200px) {
+  .cards h1 {
+    font-size: 6rem; /* Larger font for larger screens */
+  }
+
+  .cards__container {
+    width: 84%;
+  }
+
+  .cards p {
+    max-width: 60%; /* Slimmer paragraphs on desktop screens */
+  }
+  .home-item {
+    max-width: 60%; /* Set max-width to 90% for smaller screens */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cards {
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .cards h1 {
+    font-size: 5rem; /* Adjust font size for medium screens */
+  }
+
+  .cards h2 {
+    font-size: 1.7rem;
+  }
+
+  .cards p {
+    font-size: 1rem;
+  }
+  .home-item {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .cards h1 {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+  }
+
+  .cards h2 {
+    font-size: 1.2rem;
+  }
+
+  .cards p {
+    font-size: 0.9rem;
+  }
+  .home-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    padding: 1rem; /* Further reduce padding for extra small screens */
+  }
+
+  .cards h1 {
+    font-size: 3rem; /* Smaller font size for very small screens */
+  }
+
+  .cards h2 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+    max-width: 90%; /* Increase max-width for very small screens */
+  }
+
+  .home-item {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
+}
